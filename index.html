@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Food Restaurant</title>
+
+
+</head>
+
+<body>
+
+<header>
+  <h1>🍽 Food Restaurant</h1>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</header>
+
+
+<div class="menu">
+
+  <div class="menu-card"><img src="briyani.jpg"><h3>Chicken Biryani</h3><p>$2</p><button onclick="addToCart('Chicken Biryani',2)">Add</button></div>
+  <div class="menu-card"><img src="mutton.jpg"><h3>Mutton Biryani</h3><p>$5</p><button onclick="addToCart('Mutton Biryani',5)">Add</button></div>
+  <div class="menu-card"><img src="fried.jpg"><h3>Fried Rice</h3><p>$2</p><button onclick="addToCart('Fried Rice',2)">Add</button></div>
+  <div class="menu-card"><img src="65.jpg"><h3>Chicken 65</h3><p>$3</p><button onclick="addToCart('Chicken 65',3)">Add</button></div>
+  <div class="menu-card"><img src="chukka.jpg"><h3>Chicken Chukka</h3><p>$2</p><button onclick="addToCart('Chicken Chukka',2)">Add</button></div>
+  <div class="menu-card"><img src="nallampatti.jpg"><h3>Nallampatti Chicken</h3><p>$3</p><button onclick="addToCart('Nallampatti Chicken',3)">Add</button></div>
+  <div class="menu-card"><img src="pallipalayam.jpg"><h3>Pallipalayam</h3><p>$3</p><button onclick="addToCart('Pallipalayam',3)">Add</button></div>
+  <div class="menu-card"><img src="pepper.jpg"><h3>Pepper Chicken</h3><p>$3</p><button onclick="addToCart('Pepper Chicken',3)">Add</button></div>
+  <div class="menu-card"><img src="fish.jpg"><h3>Fish Fry</h3><p>$3</p><button onclick="addToCart('Fish Fry',3)">Add</button></div>
+  <div class="menu-card"><img src="prawn.jpg"><h3>Prawn Curry</h3><p>$2</p><button onclick="addToCart('Prawn Curry',2)">Add</button></div>
+  <div class="menu-card"><img src="mutton chukka.jpg"><h3>Mutton Chukka</h3><p>$3</p><button onclick="addToCart('Mutton Chukka',3)">Add</button></div>
+  <div class="menu-card"><img src="crab.jpg"><h3>Crab</h3><p>$1</p><button onclick="addToCart('crab ',1)">Add</button></div>
+
+
+</div>
+
+<div id="cart">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <div id="totalAmount">Total: $0</div>
+  <button class="place-btn" onclick="placeOrder()">Place Order</button>
+</div>
+
+
+<div class="section">
+  <h2>Login</h2>
+  <input id="username" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+
+<div class="section">
+  <h2>Contact Us</h2>
+  <input placeholder="Name">
+  <input placeholder="Email">
+  <textarea placeholder="Message"></textarea>
+  <button>Submit</button>
+</div>
+
+
+</body>
+</html>
